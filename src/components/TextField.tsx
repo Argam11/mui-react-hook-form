@@ -2,7 +2,7 @@ import { useForm, FormProvider } from "react-hook-form";
 import { Button, Stack } from "@mui/material";
 import { RHFTextField } from "components/RHFComponents/RHFTextField";
 
-export const Form = () => {
+const TextField = () => {
   const methods = useForm({
     defaultValues: {
       firstName: "",
@@ -28,3 +28,5 @@ export const Form = () => {
     </FormProvider>
   );
 };
+
+export default TextField;
